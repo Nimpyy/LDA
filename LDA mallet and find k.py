@@ -1,10 +1,10 @@
-pip install install-jdk
+ppip install install-jdk
 
 import os
 import matplotlib.pyplot as plt
 
-os.environ.update({'MALLET_HOME':r'C:/Users/Desktop/research/new_mallet/'})
-mallet_path = r'/content/mallet-2.0.8/bin/mallet' # update this path
+os.environ.update({'MALLET_HOME':r'thePathToYourData'})
+mallet_path = r'ThePathToYourData' # update this path
 ldamallet = gensim.models.wrappers.LdaMallet(mallet_path, corpus=corpus, num_topics=9, id2word=id2word)
 
 def compute_coherence_values(dictionary, corpus, texts, limit, start=2, step=1):
